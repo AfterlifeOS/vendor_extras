@@ -21,7 +21,7 @@ PRODUCT_PACKAGES += \
 endif
 
 # Clocks
-ifneq ($(AFTERLIFE_GAPPS),true)
+ifeq ($(SYSTEMUI_CLOCK),true)
 PRODUCT_PACKAGES += \
     SystemUIClocks-BigNum \
     SystemUIClocks-Calligraphy \
