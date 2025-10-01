@@ -21,7 +21,6 @@ PRODUCT_PACKAGES += \
 endif
 
 # Clocks
-ifeq ($(SYSTEMUI_CLOCK),true)
 PRODUCT_PACKAGES += \
     SystemUIClocks-BigNum \
     SystemUIClocks-Calligraphy \
@@ -30,7 +29,6 @@ PRODUCT_PACKAGES += \
     SystemUIClocks-Inflate \
     SystemUIClocks-Metro \
     SystemUIClocks-NumOverlap
-endif
 
 # Fonts
 PRODUCT_PACKAGES += \
