@@ -32,6 +32,96 @@ PRODUCT_PACKAGES += \
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
+    ClockFontACFilmstripOverlay \
+    ClockFontAccuratistOverlay \
+    ClockFontAclonicaOverlay \
+    ClockFontAlmonteSnowOverlay \
+    ClockFontAlphaCloudsOverlay \
+    ClockFontAlphaFlowersOverlay \
+    ClockFontAlphaWoodOverlay \
+    ClockFontAmaranteOverlay \
+    ClockFontAmpad3D2Overlay \
+    ClockFontBariolOverlay \
+    ClockFontBetsyFlanaganOverlay \
+    ClockFontBigCheeseOverlay \
+    ClockFontBrandayolqOverlay \
+    ClockFontBudmoJigglerOverlay \
+    ClockFontBunnyRabbitsOverlay \
+    ClockFontCFBadNewsOverlay \
+    ClockFontCFOneTwoTreesOverlay \
+    ClockFontCagliostroOverlay \
+    ClockFontCatOverlay \
+    ClockFontCoconOverlay \
+    ClockFontComfortaaOverlay \
+    ClockFontComicSansOverlay \
+    ClockFontConcentrateOverlay \
+    ClockFontCookieRunOverlay \
+    ClockFontCoolstoryOverlay \
+    ClockFontCrackmanOverlay \
+    ClockFontDiscoMidnightOverlay \
+    ClockFontEasterBunnyOverlay \
+    ClockFontEditPointsFilledOverlay \
+    ClockFontEditPointsOverlay \
+    ClockFontElriott2Overlay \
+    ClockFontExotwoOverlay \
+    ClockFontFibographyOverlay \
+    ClockFontFifa2018Overlay \
+    ClockFontFloorlightOverlay \
+    ClockFontGautsMotelUpperRightOverlay \
+    ClockFontGoogleSansFlexOverlay \
+    ClockFontGrandHotelOverlay \
+    ClockFontHangedOverlay \
+    ClockFontHarmonySansOverlay \
+    ClockFontHotSweatOverlay \
+    ClockFontKGOnlyHopeOverlay \
+    ClockFontKaramuruhOverlay \
+    ClockFontKingthingsOverlay \
+    ClockFontLMSCliffordOverlay \
+    ClockFontLatoOverlay \
+    ClockFontLinotteOverlay \
+    ClockFontLittleBunnyOverlay \
+    ClockFontLowerAtmosphereOverlay \
+    ClockFontMessingLetternOverlay \
+    ClockFontMonbijouxClownpieceOverlay \
+    ClockFontMotorola \
+    ClockFontNeonDiscoOverlay \
+    ClockFontNinjasOverlay \
+    ClockFontNokiaPureOverlay \
+    ClockFontNothingDotHeadlineOverlay \
+    ClockFontNunitoOverlay \
+    ClockFontOneplusSansOverlay \
+    ClockFontOneplusSlateOverlay \
+    ClockFontOswaldOverlay \
+    ClockFontPinewoodOverlay \
+    ClockFontPlaidEventOverlay \
+    ClockFontPlantsLettersOverlay \
+    ClockFontPlayOverlay \
+    ClockFontQuandoOverlay \
+    ClockFontQuickSouthOverlay \
+    ClockFontRedressedOverlay \
+    ClockFontReemKufiOverlay \
+    ClockFontRemponkOverlay \
+    ClockFontRobotoCondensedOverlay \
+    ClockFontRomantiquesOverlay \
+    ClockFontRoundheadsOverlay \
+    ClockFontRubikOverlay \
+    ClockFontSamsungOneOverlay \
+    ClockFontSansSerifOverlay \
+    ClockFontScrapItUpOverlay \
+    ClockFontSonySketchOverlay \
+    ClockFontSpaceGameOverlay \
+    ClockFontStandardHeaderOverlay \
+    ClockFontStoropiaOverlay \
+    ClockFontSurferOverlay \
+    ClockFontTh3machineOverlay \
+    ClockFontUbuntuOverlay \
+    ClockFontVtksdura3dOverlay \
+    ClockFontZnikomitNo24Overlay \
+    ClockFontIOSOverlay \
+    ClockFontHerculesOverlay \
+    ClockFontSlimOverlay \
+    ClockFontNtype82Overlay \
+    ClockFontSubwayOverlay \
     FontAccuratistOverlay \
     FontAclonicaOverlay \
     FontAmaranteOverlay \
@@ -286,7 +376,25 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 # Circle to search
 ifneq ($(AFTERLIFE_GAPPS),true)
 PRODUCT_COPY_FILES += \
-    vendor/extras/prebuilt/product/etc/sysconfig/contextual_search.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/contextual_search.xml
+    vendor/extras/prebuilt/product/etc/sysconfig/ambient_data.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/ambient_data.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/contextual_search.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/contextual_search.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/dialer_experience.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/dialer_experience.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/google_build.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_build.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/google-initial-package-stopped-states.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-initial-package-stopped-states.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nexus.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/nga.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nga.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/pixel_2017-initial-package-stopped-states.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2017-initial-package-stopped-states.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2018-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2018-and-newer.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2019-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2019-and-newer.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2022-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2022-and-newer.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2023-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2023-and-newer.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2024-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2024-and-newer.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/preinstalled_packages_pixel_experience_2017_and_newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled_packages_pixel_experience_2017_and_newer.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/preinstalled_packages_pixel_experience_2021_and_newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled_packages_pixel_experience_2021_and_newer.xml \
+    vendor/extras/prebuilt/product/etc/sysconfig/preinstalled_packages_repair_mode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled_packages_repair_mode.xml
 endif
 
 PRODUCT_COPY_FILES += \
